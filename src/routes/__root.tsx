@@ -14,7 +14,7 @@ import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { site, whatsappLink } from "../lib/site";
 
-const logoUrl = "/pnk3dlab-logo.png";
+const logoUrl = `${import.meta.env.BASE_URL}pnk3dlab-logo.png`;
 
 const navLinks = [
   { to: "/", label: "Home" },

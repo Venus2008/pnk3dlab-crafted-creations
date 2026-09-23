@@ -13,7 +13,8 @@ import { Instagram, Menu, X } from "lucide-react";
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { site, whatsappLink } from "../lib/site";
-import logo from "../assets/pnk3dlab-logo.png.asset.json";
+
+const logoUrl = "/pnk3dlab-logo.png";
 
 const navLinks = [
   { to: "/", label: "Home" },
@@ -90,9 +91,13 @@ function Header() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-background/90 backdrop-blur-sm">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6">
         <Link to="/" className="flex items-center" aria-label="PNK3DLAB home">
-          <img src={logo.url} alt="PNK3DLAB logo" className="h-12 w-auto rounded-sm" />
+          <img
+            src={logoUrl}
+            alt="PNK3DLAB logo"
+            className="h-20 w-auto rounded-sm object-contain sm:h-24 md:h-20"
+          />
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex" aria-label="Main navigation">
@@ -150,7 +155,11 @@ function Footer() {
       <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
         <div className="flex flex-col items-center gap-8 text-center md:flex-row md:items-start md:justify-between md:text-left">
           <div className="flex flex-col items-center md:items-start">
-            <img src={logo.url} alt="PNK3DLAB logo" className="h-16 w-auto rounded-sm" />
+            <img
+              src={logoUrl}
+              alt="PNK3DLAB logo"
+              className="h-24 w-auto rounded-sm object-contain"
+            />
             <p className="mt-3 text-xs tracking-[0.2em] text-muted-foreground uppercase">
               {site.tagline}
             </p>

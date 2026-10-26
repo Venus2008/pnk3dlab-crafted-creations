@@ -1,11 +1,14 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 
-import galleryFigurine from "../assets/gallery-figurine.jpg";
-import galleryBust from "../assets/gallery-bust.jpg";
-import galleryCharacter from "../assets/gallery-character.jpg";
-import galleryPhonestand from "../assets/gallery-phonestand.jpg";
-import galleryKeychain from "../assets/gallery-keychain.jpg";
-import galleryVase from "../assets/gallery-vase.jpg";
+import galleryFigurine from "../assets/gallery-figurine.png";
+import galleryBust from "../assets/gallery-bust.png";
+import galleryCharacter from "../assets/gallery-character.png";
+import galleryPhotostand from "../assets/gallery-photostand.png";
+import galleryKeychain from "../assets/gallery-keychain.png";
+import galleryVase from "../assets/gallery-vase.png";
+import galleryName from "../assets/gallery-name.png";
+import galleryFootballPenStand from "../assets/football-pen-stand.png";
+import galleryLamp from "../assets/lamp.png";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
@@ -29,15 +32,17 @@ export const Route = createFileRoute("/gallery")({
   component: GalleryPage,
 });
 
-// ─── Swap these images with real photos later ────────────────────────────────
-// Replace the import paths above (or add entries here) — the grid updates itself.
+// ─── Gallery items — update caption / alt to match your real products ─────────
 const items = [
-  { src: galleryFigurine, alt: "Personalized gold couple figurine", caption: "Custom Couple Figurine" },
-  { src: galleryBust, alt: "3D-printed portrait bust in white", caption: "Portrait Bust" },
-  { src: galleryCharacter, alt: "Custom 3D-printed character figurine", caption: "Custom Character" },
-  { src: galleryPhonestand, alt: "Functional 3D-printed phone stand", caption: "Phone Stand" },
-  { src: galleryKeychain, alt: "Personalized 3D-printed name keychains", caption: "Name Keychains" },
-  { src: galleryVase, alt: "3D-printed geometric vase with gold detail", caption: "Geometric Vase" },
+  { src: galleryFigurine, alt: "Custom 3D-printed couple figurine", caption: "Shivji Idols" },
+  { src: galleryBust, alt: "3D-printed portrait bust", caption: "Ganpatiji" },
+  { src: galleryCharacter, alt: "Custom 3D-printed character figurine", caption: "Ganpati Idol" },
+  { src: galleryPhotostand, alt: "3D-printed functional photo stand", caption: "Camera Keychains" },
+  { src: galleryKeychain, alt: "Personalized 3D-printed name keychains", caption: "Diwali Lamps" },
+  { src: galleryVase, alt: "3D-printed geometric vase", caption: "Hare Krishna" },
+  { src: galleryName, alt: "Custom 3D-printed name plate or sign", caption: "Sabr Shukra" },
+  { src: galleryFootballPenStand, alt: "3D-printed football pen stand", caption: "Football Pen Stand" },
+  { src: galleryLamp, alt: "3D-printed custom lamp", caption: "Custom Lamp" },
 ];
 
 function GalleryPage() {

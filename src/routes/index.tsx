@@ -2,9 +2,9 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Lightbulb, MessageCircle, Truck, ArrowRight } from "lucide-react";
 import { whatsappLink } from "../lib/site";
 
-import galleryFigurine from "../assets/gallery-figurine.jpg";
-import galleryBust from "../assets/gallery-bust.jpg";
-import galleryVase from "../assets/gallery-vase.jpg";
+import galleryCharacter from "../assets/gallery-character.png";
+import galleryKeychain from "../assets/gallery-keychain.png";
+import galleryName from "../assets/gallery-name.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -47,9 +47,9 @@ const steps = [
 ];
 
 const teaser = [
-  { src: galleryFigurine, alt: "Gold 3D-printed couple figurine" },
-  { src: galleryBust, alt: "White 3D-printed portrait bust" },
-  { src: galleryVase, alt: "White 3D-printed geometric vase" },
+  { src: galleryCharacter, alt: "Custom 3D-printed character figurine" },
+  { src: galleryKeychain, alt: "Personalized 3D-printed name keychains" },
+  { src: galleryName, alt: "Custom 3D-printed name plate or sign" },
 ];
 
 function HomePage() {

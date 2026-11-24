@@ -6,7 +6,7 @@
 // You can pass additional config via defineConfig({ vite: { ... }, etc... }) if needed.
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
-const githubPagesBase = "/pnk3dlab-crafted-creations/";
+const githubPagesBase = "/";
 
 export default defineConfig({
   vite: {
